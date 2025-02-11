@@ -64,7 +64,7 @@ nav {
     flex-direction: column;
     font-size: 30px;
     border-radius: 30px;
-    box-shadow: inset 5px 5px 15px rgba(0, 0, 0, 0.3); /* Inre skugga */
+    box-shadow: inset 5px 5px 15px rgba(0, 0, 0, 0.3); 
     margin: 10px;
 }
 
@@ -74,7 +74,7 @@ nav {
     background-size: cover;
     height: 750px;
     border-radius: 30px;
-    box-shadow: inset 5px 5px 15px rgba(0, 0, 0, 0.3); /* Inre skugga */
+    box-shadow: inset 5px 5px 15px rgba(0, 0, 0, 0.3);
     margin: 10px;
 }
 
@@ -91,24 +91,24 @@ nav {
 
 .social-login-icon:hover {
     background-color: #f0f0f0; 
-    color: slategrey; /* Ändrar textfärgen vid hover */
+    color: slategrey; 
 }
 
-
+    /* Justera meny-länkar för små skärmar */
 @media screen and (max-width: 768px) {
     .main {
-        flex-direction: column; /* Gör så att left-side och right-side hamnar ovanför varandra */
+        flex-direction: column; 
         text-align: center;
     }
 
 
-    /* Justera meny-länkar för små skärmar */
+
     nav {
-        gap: 20px; /* Minskar mellanrum på små skärmar */
+        gap: 20px;
     }
 
     .meny-item a {
-        font-size: 18px; /* Minskar fontstorlek på mobilen */
+        font-size: 18px; 
         padding: 10px;
     }
 

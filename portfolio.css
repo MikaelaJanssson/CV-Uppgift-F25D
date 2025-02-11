@@ -16,7 +16,7 @@ header {
     display: flex;
     flex-direction: column; /* Gör så att namn och meny hamnar ovanför varandra */
     justify-content: center;
-    align-items: center; /* Centrerar alla element i headern */
+    align-items: center; 
     background: linear-gradient(90deg, rgb(216, 183, 75), rgba(158, 163, 163, 0.774));
     height: 150px;
 }
@@ -25,7 +25,7 @@ header {
     font-family: 'Tinos', serif;
     font-size: 30px;
     color: white;
-    margin-bottom: 20px; /* avstånd mellan name och meny */
+    margin-bottom: 20px; 
 }
 
 nav {
@@ -50,7 +50,7 @@ nav {
 
 .main {
     display: flex;
-    flex-wrap: wrap; /* Tillåter att innehållet kan brytas vid mindre skärmstorlekar */
+    flex-wrap: wrap; 
 }
 
 .left-side {
@@ -63,7 +63,7 @@ nav {
     font-size: 30px;
     flex-wrap: wrap;
     border-radius: 30px;
-    box-shadow: inset 5px 5px 15px rgba(0, 0, 0, 0.3); /* Inre skugga */
+    box-shadow: inset 5px 5px 15px rgba(0, 0, 0, 0.3); 
     margin: 10px;
 }
 
@@ -73,7 +73,7 @@ nav {
     background-size: cover;
     height: 750px;
     border-radius: 30px;
-    box-shadow: inset 5px 5px 15px rgba(0, 0, 0, 0.3); /* Inre skugga */
+    box-shadow: inset 5px 5px 15px rgba(0, 0, 0, 0.3); 
     margin: 10px;
 }
 
@@ -142,7 +142,7 @@ a.button:hover {
 
 
     nav {
-        gap: 5px;  /* Minska mellanr mellan nav-länkar */
+        gap: 5px;  /* Minska mellanrum mellan nav-länkar */
     }
 
     .main {
@@ -150,8 +150,8 @@ a.button:hover {
     }
 
     .left-side, .right-side {
-        width: 100%; /* Gör så att varje del tar upp hela bredden på skärmen */
-        height: auto; /* Höjden blir automatisk för bättre responsivitet */
+        width: 100%; 
+        height: auto; 
         margin: 10px 0;
     }
 

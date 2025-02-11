@@ -143,12 +143,12 @@ nav {
 .card p {
     font-size: 18px;
     margin-top: 290px;  /* Ger avstånd mellan texten och toppen av kortet */
-    flex-grow: 0;  /* Säkerställer att den inte växer när utrymme finns */
+    flex-grow: 0;  
 }
 
 
 .button {
-    margin-top: 10px;  /* Lägg till avstånd mellan knappen och texten */
+    margin-top: 10px;  /* avstånd mellan knappen och texten */
     padding: 10px 20px;
     border-radius: 5px;
     background-color: lightgray;
@@ -158,10 +158,10 @@ nav {
     cursor: pointer;
     display: inline-block;
     transition: background-color 0.3s ease;
-    position: absolute;  /* Gör att knappen inte påverkas av textlängden */
-    bottom: 30px;  /* Placera knappen 30px från botten av kortet */
-    left: 50%;  /* Centrerar knappen horisontellt */
-    transform: translateX(-50%);  /* Justerar knappen perfekt centrerad */
+    position: absolute;  
+    bottom: 30px;  
+    left: 50%;  
+    transform: translateX(-50%);  /* Justerar knappen centrerad */
     
 }
 
@@ -224,13 +224,13 @@ nav {
     }
 
     .profile-photo, .profile-text {
-        width: 100%; /* Gör så att varje del tar upp hela bredden på skärmen */
-        height: auto;  /* Gör höjden flexibel */
+        width: 100%; 
+        height: auto;  
     }
 
     .card {
-        width: 48%; /* Justera så att korten är två bredvid varandra */
-        margin: 10px 1%; /* För att skapa utrymme mellan korten */
+        width: 48%; 
+        margin: 10px 1%; /* skapa utrymme mellan korten */
     }
 }
 

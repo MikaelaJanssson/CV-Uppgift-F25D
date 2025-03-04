@@ -1,0 +1,19 @@
+.workplace {
+  border: 1px solid #ccc;
+  padding: 8px;
+  margin-left: 10px;
+  margin-top: 10px;
+  background-color: #f9f9f9;
+  font-size: 15px;
+  width: 98%;
+  box-sizing: border-box;
+  transition: transform 0.3s ease-in-out; /* Gör övergången mjuk */
+}
+
+.workplace p {
+  margin: 5px 0;
+}
+
+.workplace:hover {
+  transform: scale(1.02); /* Skalar upp kortet vid hover */
+}

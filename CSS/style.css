@@ -1,0 +1,235 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  max-width: 100%;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-image: url("../img/back.webp");
+  background-size: cover;
+}
+
+header {
+  display: flex;
+  flex-direction: column; /* Gör så att namn och meny hamnar ovanför varandra */
+  justify-content: center;
+  align-items: center;
+  background-color: #85b6e4;
+  background: linear-gradient(
+    90deg,
+    rgb(151, 191, 228),
+    rgba(84, 163, 153, 0.774)
+  );
+  height: 150px;
+}
+
+.name {
+  font-family: "Tinos", serif;
+  font-size: 30px;
+  color: white;
+  margin-bottom: 20px; /* avstånd mellan name och meny */
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 70px;
+  align-items: center;
+}
+
+.meny-item a {
+  font-size: 21px;
+  text-decoration: none;
+  color: white;
+  padding: 20px 20px;
+}
+
+.meny-item a:hover {
+  background-color: #f0f0f0;
+  color: #333;
+  border-radius: 5px;
+}
+
+.profile-container {
+  display: flex;
+  flex: 1;
+  margin: 20px;
+  gap: 20px;
+}
+
+.profile-photo img {
+  object-fit: cover; /*Vill att hela min bild skall få plats i min div.*/
+  object-position: center 25%;
+  width: 100%;
+  height: 100%;
+  border-radius: 30px;
+}
+
+.profile-photo {
+  text-align: center;
+  flex: 1;
+  width: 50%;
+  height: 750px;
+  margin-bottom: 10px;
+}
+
+.profile-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex: 1;
+  width: 50%;
+  height: 750px;
+  margin-bottom: 10px;
+  flex-direction: column; /*få h2 och p ovanför varandra i div*/
+  font-size: 20px;
+  background-color: white;
+  border-radius: 30px;
+}
+
+.CV {
+  margin-top: 40px;
+}
+
+h2 {
+  display: block;
+  width: 100%;
+  padding: 10px 0; /* Du kan lägga till padding om du vill ha lite utrymme runt texten */
+  text-align: center; /* Om du vill centrera texten horisontellt */
+}
+
+.presentation {
+  padding: 30px;
+}
+
+.heading {
+  font-family: "Tinos", serif;
+  color: white;
+  display: flex;
+  justify-content: center;
+  font-size: 35px;
+}
+
+.section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around; /* Fördelar korten jämnt */
+}
+
+.footer {
+  text-align: center;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  height: 480px;
+  width: 300px;
+  margin: 10px;
+  background: white;
+  border-radius: 30px;
+  text-align: center;
+  padding: 30px;
+  position: relative;
+}
+
+.card p {
+  font-size: 18px;
+  margin-top: 290px; /* Ger avstånd mellan texten och toppen av kortet */
+  flex-grow: 0;
+}
+
+.button {
+  margin-top: 10px; /* avstånd mellan knappen och texten */
+  padding: 10px 20px;
+  border-radius: 5px;
+  background-color: lightgray;
+  color: black;
+  text-decoration: none;
+  font-size: 16px;
+  cursor: pointer;
+  display: inline-block;
+  transition: background-color 0.3s ease;
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%); /* Justerar knappen centrerad */
+}
+
+.card1 {
+  display: flex;
+  background-image: url("../img/log-in-page.png");
+  background-size: 200%;
+  background-repeat: no-repeat;
+  background-position: top center;
+}
+
+.card2 {
+  display: flex;
+  background-image: url("../img/project2.jpg");
+  background-size: 154%;
+  background-repeat: no-repeat;
+  background-position: top center;
+}
+
+.card3 {
+  display: flex;
+  background-image: url("../img/project3.jpg");
+  background-size: 154%;
+  background-repeat: no-repeat;
+  background-position: top center;
+}
+
+.card4 {
+  display: flex;
+  background-image: url("../img/project4.jpg");
+  background-size: 154%;
+  background-repeat: no-repeat;
+  background-position: top center;
+}
+
+.social-login-icon {
+  font-size: 25px;
+  padding: 20px;
+  color: white;
+}
+
+.social-login-icon:hover {
+  /* Ändrar textfärgen vid hover */
+  background-color: #f0f0f0;
+  color: slategrey;
+}
+
+.button:hover {
+  background-color: rgba(80, 75, 75, 0.425);
+}
+
+@media screen and (max-width: 768px) {
+  .profile-container {
+    flex-direction: column; /* Gör så att profilbild och profiltext hamnar ovanför varandra */
+  }
+
+  .profile-photo,
+  .profile-text {
+    width: 100%;
+    height: auto;
+  }
+
+  .card {
+    width: 48%;
+    margin: 10px 1%; /* skapa utrymme mellan korten */
+  }
+}
+
+@media screen and (max-width: 614px) {
+  .nav {
+    gap: 1px;
+  }
+}

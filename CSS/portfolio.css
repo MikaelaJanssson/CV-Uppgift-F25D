@@ -2,14 +2,19 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  max-width: 100%;
 }
 
 .container {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  background: linear-gradient(
+    90deg,
+    rgb(238, 238, 235),
+    rgba(237, 238, 235, 0.774)
+  );
   background-size: cover;
-  width: 100%;
 }
 
 header {
@@ -17,11 +22,8 @@ header {
   flex-direction: column; /* Gör så att namn och meny hamnar ovanför varandra */
   justify-content: center;
   align-items: center;
-  background: linear-gradient(
-    90deg,
-    rgb(216, 183, 75),
-    rgba(158, 163, 163, 0.774)
-  );
+  background-color: #85b6e4;
+  background: linear-gradient(90deg, rgb(255, 255, 236), rgb(3, 3, 3));
   height: 150px;
 }
 
@@ -29,7 +31,7 @@ header {
   font-family: "Tinos", serif;
   font-size: 30px;
   color: white;
-  margin-bottom: 20px;
+  margin-bottom: 20px; /* avstånd mellan name och meny */
 }
 
 nav {
@@ -52,146 +54,134 @@ nav {
   border-radius: 5px;
 }
 
-.main {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.left-side {
-  flex: 1;
-  height: 750px;
+.heading {
+  font-family: "Tinos", serif;
+  color: black;
   display: flex;
   justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  font-size: 30px;
-  flex-wrap: wrap;
-  border-radius: 30px;
-  box-shadow: inset 5px 5px 15px rgba(0, 0, 0, 0.3);
-  margin: 10px;
+  font-size: 35px;
+  display: block;
+  width: 100%;
+  padding: 10px 0; /* Du kan lägga till padding om du vill ha lite utrymme runt texten */
+  text-align: center; /* Om du vill centrera texten horisontellt */
+  margin-top: 20px;
 }
 
-.right-side {
-  background-image: url("../img/yellow.webp");
-  flex: 1;
-  background-size: cover;
-  height: 750px;
-  border-radius: 30px;
-  box-shadow: inset 5px 5px 15px rgba(0, 0, 0, 0.3);
-  margin: 10px;
+.section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around; /* Fördelar korten jämnt */
+}
+
+.footer {
+  margin-top: auto;
+  text-align: center;
 }
 
 .card {
   display: flex;
-  height: 100%;
-  width: 100%;
-  flex-basis: 100px;
-  flex-wrap: wrap;
-  padding-top: 20px;
-  text-align: center;
+  flex-direction: column;
+  justify-content: flex-start;
   align-items: center;
-  justify-content: center;
-  gap: 10px;
+  height: 480px;
+  width: 300px;
+  margin: 10px;
+  background: white;
+  border-radius: 30px;
+  text-align: center;
+  padding: 30px;
+  position: relative;
+  box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.3);
 }
 
-.projektcard {
-  border: 3px solid black;
-  height: 400px;
-  width: 200px;
-  word-wrap: break-word;
-  font-size: 20px;
-  background-image: url(../img/log-in-page.png);
+.card p {
+  font-size: 18px;
+  margin-top: 290px; /* Ger avstånd mellan texten och toppen av kortet */
+  flex-grow: 0;
 }
 
-h3 {
-  margin-top: 40px;
-}
-
-a.button {
-  background-color: rgb(241, 231, 199);
+.button {
+  margin-top: 10px; /* avstånd mellan knappen och texten */
+  padding: 10px 20px;
+  border-radius: 5px;
+  background-color: lightgray;
   color: black;
   text-decoration: none;
-  padding: 10px 20px;
   font-size: 16px;
-  border-radius: 5px;
   cursor: pointer;
   display: inline-block;
-  text-align: center;
   transition: background-color 0.3s ease;
-  margin-top: 250px;
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%); /* Justerar knappen centrerad */
 }
 
-a.button:hover {
-  background-color: lightgray;
+.card1 {
+  margin-top: 50px;
+  display: flex;
+  background-image: url("../img/log-in-page.png");
+  background-size: 200%;
+  background-repeat: no-repeat;
+  background-position: top center;
 }
 
-.footer {
-  text-align: center;
-  background: linear-gradient(
-    90deg,
-    rgb(216, 183, 75),
-    rgba(158, 163, 163, 0.774)
-  );
+.card2 {
+  margin-top: 50px;
+  display: flex;
+  background-image: url("../img/project2.jpg");
+  background-size: 154%;
+  background-repeat: no-repeat;
+  background-position: top center;
+}
+
+.card3 {
+  margin-top: 50px;
+  display: flex;
+  background-image: url("../img/project3.jpg");
+  background-size: 154%;
+  background-repeat: no-repeat;
+  background-position: top center;
+}
+
+.card4 {
+  margin-top: 50px;
+  display: flex;
+  background-image: url("../img/project4.jpg");
+  background-size: 154%;
+  background-repeat: no-repeat;
+  background-position: top center;
 }
 
 .social-login-icon {
   font-size: 25px;
   padding: 20px;
-  color: white;
+  color: grey;
 }
 
 .social-login-icon:hover {
+  /* Ändrar textfärgen vid hover */
   background-color: #f0f0f0;
-  color: slategrey;
+  color: black;
+}
+
+.button:hover {
+  background-color: rgba(80, 75, 75, 0.425);
 }
 
 @media screen and (max-width: 768px) {
-  nav {
-    gap: 5px; /* Minska mellanrum mellan nav-länkar */
-  }
-
-  .main {
-    flex-direction: column; /*  left-side och right-side hamnar ovanför varandra */
-  }
-
-  .left-side,
-  .right-side {
-    width: 100%;
-    height: auto;
-    margin: 10px 0;
+  .profile-container {
+    flex-direction: column; /* Gör så att profilbild och profiltext hamnar ovanför varandra */
   }
 
   .card {
-    flex-direction: column;
-    gap: 15px;
-  }
-
-  .projektcard {
-    width: 90%;
-    height: 250px;
-    font-size: 18px;
-  }
-
-  a.button {
-    margin-top: 20px;
+    width: 48%;
+    margin: 10px 1%; /* skapa utrymme mellan korten */
   }
 }
 
-@media screen and (max-width: 480px) {
-  .projektcard {
-    width: 100%;
-    height: 220px;
-  }
-
-  .card {
-    gap: 10px;
-  }
-
-  .name {
-    font-size: 20px;
-  }
-
-  .meny-item a {
-    font-size: 18px;
+@media screen and (max-width: 614px) {
+  .nav {
+    gap: 1px;
   }
 }

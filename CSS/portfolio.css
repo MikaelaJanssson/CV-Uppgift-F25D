@@ -19,7 +19,7 @@
 
 header {
   display: flex;
-  flex-direction: column; /* Gör så att namn och meny hamnar ovanför varandra */
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   background-color: #85b6e4;
@@ -31,7 +31,7 @@ header {
   font-family: "Tinos", serif;
   font-size: 30px;
   color: white;
-  margin-bottom: 20px; /* avstånd mellan name och meny */
+  margin-bottom: 20px;
 }
 
 nav {
@@ -62,15 +62,15 @@ nav {
   font-size: 35px;
   display: block;
   width: 100%;
-  padding: 10px 0; /* Du kan lägga till padding om du vill ha lite utrymme runt texten */
-  text-align: center; /* Om du vill centrera texten horisontellt */
+  padding: 10px 0;
+  text-align: center;
   margin-top: 20px;
 }
 
 .section {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around; /* Fördelar korten jämnt */
+  justify-content: space-around;
 }
 
 .footer {
@@ -96,12 +96,12 @@ nav {
 
 .card p {
   font-size: 18px;
-  margin-top: 290px; /* Ger avstånd mellan texten och toppen av kortet */
+  margin-top: 290px;
   flex-grow: 0;
 }
 
 .button {
-  margin-top: 10px; /* avstånd mellan knappen och texten */
+  margin-top: 10px;
   padding: 10px 20px;
   border-radius: 5px;
   background-color: lightgray;
@@ -114,7 +114,7 @@ nav {
   position: absolute;
   bottom: 30px;
   left: 50%;
-  transform: translateX(-50%); /* Justerar knappen centrerad */
+  transform: translateX(-50%);
 }
 
 .card1 {
@@ -176,7 +176,7 @@ nav {
 
   .card {
     width: 48%;
-    margin: 10px 1%; /* skapa utrymme mellan korten */
+    margin: 10px 1%;
   }
 }
 

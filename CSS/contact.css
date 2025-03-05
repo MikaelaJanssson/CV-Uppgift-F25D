@@ -14,9 +14,9 @@
 
 header {
   display: flex;
-  flex-direction: column; /* Gör så att namn och meny hamnar ovanför varandra */
+  flex-direction: column;
   justify-content: center;
-  align-items: center; /* Centrerar alla element i headern */
+  align-items: center;
   background: linear-gradient(
     90deg,
     rgb(81, 25, 92),
@@ -29,7 +29,7 @@ header {
   font-family: "Tinos", serif;
   font-size: 30px;
   color: white;
-  margin-bottom: 20px; /* avstånd mellan name och meny */
+  margin-bottom: 20px;
 }
 
 nav {
@@ -37,7 +37,7 @@ nav {
   justify-content: center;
   gap: 70px;
   align-items: center;
-  flex-wrap: wrap; /* Lägger till flex-wrap för att göra menyn mer flexibel */
+  flex-wrap: wrap;
 }
 
 .meny-item a {
@@ -55,7 +55,7 @@ nav {
 
 .main {
   display: flex;
-  flex-wrap: wrap; /* Tillåter innehållet att brytas på mindre skärmar */
+  flex-wrap: wrap;
 }
 
 .left-side {

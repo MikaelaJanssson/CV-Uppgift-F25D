@@ -8,4 +8,4 @@ Mikaela Jansson
 
 ## Länk till den publicerade versionen
 
- https://mikaelajanssson.github.io/CV-Uppgift-F25D/
+http://127.0.0.1:5500/docs/index.html

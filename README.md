@@ -1,6 +1,6 @@
 # Inlämning, CV - Dynamisk sida
 
-Detta är inlämningsuppgift där vi skall skapa en CV-sida med dynamiskt innehåll.
+Detta är en inlämningsuppgift där vi skall skapa en CV-sida med dynamiskt innehåll.
 
 ## Skapad av
 
